@@ -29,6 +29,7 @@ router.post("/", async (req, res) => {
     const newAuthor = await author.save();
     // res.redirect(`authors/${newAuthor.id}`);
     res.redirect("authors");
+    console.log(newAuthor)
   } catch {
     res.render("authors/new", {
       author: author,
