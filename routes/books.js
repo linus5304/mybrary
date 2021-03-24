@@ -1,6 +1,4 @@
 const express = require("express");
-const path = require("path");
-const fs = require("fs");
 const Author = require("../models/author");
 const router = express.Router();
 const Book = require("../models/book");
